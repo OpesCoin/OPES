@@ -1118,8 +1118,8 @@ int64 static GetBlockSubsidy(int nHeight){
 	
 	
     
-    // Subsidy is reduced by 5% every 86400 blocks, which will occur approximately every 60 days
-    int exponent=(nHeight / 86400);
+    // Subsidy is reduced by 5% every 50000 blocks, which will occur approximately every 60 days
+    int exponent=(nHeight / 50000);
     for(int i=0;i<exponent;i++){
         nSubsidy=nSubsidy*95;
 		nSubsidy=nSubsidy/100;
